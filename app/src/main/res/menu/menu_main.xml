@@ -1,0 +1,39 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="barring.alcohol.MainActivity">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Profile" />
+        <item
+            android:id="@+id/nav_bars"
+            android:icon="@drawable/ic_clubing"
+            android:title="Bars" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Settings" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_friends"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Friends" />
+            <item
+                android:id="@+id/nav_polls"
+                android:icon="@mipmap/ic_launcher"
+                android:title="Polls" />
+            <item
+                android:id="@+id/nav_Groups"
+                android:icon="@drawable/ic_friends"
+                android:title="Groups" />
+        </menu>
+    </item>
+
+</menu>

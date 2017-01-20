@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/templay"
+    android:weightSum="1"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="barring.alcohol.Display"
+    tools:openDrawer="start"
+
+    >
+
+
+    <android.support.design.widget.AppBarLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f29818"
+        android:id="@+id/linearLayout">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="358dp"
+        android:layout_weight="0.79"
+        android:id="@+id/landcast"
+        android:layout_above="@+id/listFooter"
+        android:layout_below="@+id/linearLayout"
+        android:background="#373737"
+        android:weightSum="1">
+
+        <WebView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/webView"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="410dp"
+            android:id="@+id/list"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.61"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/webView"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/listFooter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#a9a9a9">
+
+        <EditText
+            android:id="@+id/ETdisplaypost"
+            android:layout_width="313dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="textCapSentences|textShortMessage"
+            android:lines="1"
+            android:singleLine="true"
+            android:textCursorDrawable="@null"
+            android:backgroundTint="#ffffff"
+            android:textColor="#ffffff"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/Bdisplaypost"
+            android:layout_toStartOf="@+id/Bdisplaypost"
+            />
+
+        <ImageButton
+            android:id="@+id/Bdisplaypost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_send"
+            android:layout_row="0"
+            android:layout_column="19"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </LinearLayout>
+
+</RelativeLayout>

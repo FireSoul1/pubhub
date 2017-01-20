@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#f29818"
+        android:id="@+id/linearLayout">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:weightSum="1"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center|left"
+                android:layout_weight=".25">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    android:id="@+id/BBack"
+                    android:src="@drawable/abc_ic_ab_back_mtrl_am_alpha"
+                    android:background="#f29818" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:layout_weight=".5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Group 1"
+                    android:id="@+id/GroupTitle"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:textColor="#2f363d"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="#00000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center|right"
+                android:weightSum="1"
+                android:layout_weight=".25">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="49dp"
+                    android:id="@+id/Bdisplaymembers"
+                    android:src="@mipmap/friends_logo"
+                    android:background="#00000000"
+                    android:clickable="false"
+                    android:scaleType="fitXY"
+                    android:layout_weight="0.33"
+                    android:onClick="onClick" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="358dp"
+        android:layout_weight="0.79"
+        android:layout_above="@+id/listFooter"
+        android:layout_below="@+id/linearLayout"
+        android:background="#373737">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/list"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/listFooter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#a9a9a9">
+
+        <EditText
+            android:id="@+id/messageInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="textCapSentences|textShortMessage"
+            android:lines="1"
+            android:singleLine="true"
+            android:backgroundTint="#ffffff"
+            android:textCursorDrawable="@null" />
+
+        <ImageButton
+            android:id="@+id/BSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_send" />
+    </LinearLayout>
+
+</RelativeLayout>

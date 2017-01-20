@@ -1,0 +1,52 @@
+{
+  "project_info": {
+    "project_id": "wise-shell-123900",
+    "project_number": "337727392031",
+    "name": "PubHub"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337727392031:android:5d23b58cf8e5f151",
+        "client_id": "android:barring.alcohol",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "barring.alcohol",
+          "certificate_hash": []
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "337727392031-j26hbv2d3h5dmnbs3kpqhmlr7b9ob3in.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "barring.alcohol",
+            "certificate_hash": "48DC3980B1BE97C515917265BC877BD818BCFE2B"
+          }
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 2,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 2
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

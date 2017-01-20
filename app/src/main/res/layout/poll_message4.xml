@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/LLpoll_authorquestion">
+
+            <TextView
+                android:id="@+id/poll_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Josh Rado: "
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:id="@+id/poll_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Is this poll working?"
+                android:textColor="#ffffff"
+                android:paddingRight="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="20dp"
+            android:background="#6a6a6a"
+            android:id="@+id/LLpoll_answer1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/poll_answer1"
+                android:text="Seems to be!"
+                android:layout_weight="1"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/poll_answer1_score"
+                android:textColor="#ffffff"
+                android:paddingRight="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="20dp"
+            android:id="@+id/LLpoll_answer2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/poll_answer2"
+                android:text="Perfectly!"
+                android:layout_weight="1"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/poll_answer2_score"
+                android:textColor="#ffffff"
+                android:paddingRight="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp"
+            android:paddingLeft="20dp"
+            android:background="#6a6a6a"
+            android:id="@+id/LLpoll_answer3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/poll_answer3"
+                android:text="Flawlessly!"
+                android:layout_weight="1"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/poll_answer3_score"
+                android:textColor="#ffffff"
+                android:paddingRight="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="20dp"
+            android:id="@+id/LLpoll_answer4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/poll_answer4"
+                android:text="Aww shit."
+                android:layout_weight="1"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/poll_answer4_score"
+                android:textColor="#ffffff"
+                android:paddingRight="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:id="@+id/LLpoll_total">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/poll_totalvotes"
+                android:text="Total Votes:"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="20dp"
+                android:textColor="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/poll_totalvotes_score"
+                android:textColor="#ffffff"
+                android:paddingRight="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
